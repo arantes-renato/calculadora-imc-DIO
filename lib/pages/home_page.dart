@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           title: Text(widget.title),
         ),
         body: Container(
-            margin: EdgeInsets.symmetric(horizontal: 30),
+            margin: const EdgeInsets.symmetric(horizontal: 30),
             alignment: Alignment.center,
             child: Column(children: [
               const Icon(
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Expanded(child: Container()),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 20),
+                margin: const EdgeInsets.symmetric(vertical: 20),
                 child: ElevatedButton(
                   onPressed: () {
                     _pessoa.setNome(_nomeController.text);
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                       context: context,
                       builder: (BuildContext context) {
                         return AlertDialog(
-                          title: Center(child: const Text('Resultado do IMC')),
+                          title: const Center(child: Text('Resultado do IMC')),
                           content: SizedBox(
                             height: 80,
                             child: Column(
